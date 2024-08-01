@@ -1,0 +1,178 @@
+print("<whatever>")     :     to print things 
+print("print smth","print smth else");       :     we can separate things by commas
+print(<print a number>)    :     print numbers 
+
+NOTE : ';' isn't a thing here 
+
+<variable> = <value> 
+<variable> = None       :     'None" here is a dataType. 
+type(<variable>)     :     returns type of data. 
+
+NOTE : string can be operated with number and (*,+)  
+
+a//b     :     integer division(floor)  
+               (integer division will display output as float )
+
+#     :     single line comments
+""" """       :     multiple line comments 
+
+input()     :     function used to input some values 
+   if we need a particular type of input we can : int(input()) 
+                                                  float(input()) 
+double(input("double value is: "))     :     to display a prompt before you take inputs 
+
+if(condition 01):
+   Statement01
+elif(condition):
+   Statement02
+else(condition): 
+   Statement03 
+
+#single line if ternary operator. 
+   <var> = <val1> if <condition> else <val2> 
+
+#Clever if ternary operator 
+   <var> = (false_val, true_val)[<condition>]  
+
+NOTE : a, b = 1,2.0        :     this is possible here 
+
+type conversion #automatic conversion by compiler  
+type Casting #forceful conversion using <dataType>
+
+NOTE  :  input here always convert everything  into 
+
+ ___________________________________________________________________________________________________________________________
+
+   STRINGS
+
+concatenation possible : <str1> + <str2> 
+length of str     :     len(<string>) 
+\n       :     fore new line  
+\t       :     fore tabular space. 
+
+Slicing in String       :     string[1:4] <that's index inside those..> 
+                              string[ :4]
+                              string[1:]  == string[1: len(str)]
+
+NOTE : Negative index starts from -1 
+
+String FUnctions: 
+   str.endsWith("er") 
+   str.capitalize()
+   str.replace(old,new) 
+   str.find(word)
+   str.count("am")
+
+ ___________________________________________________________________________________________________________________________
+
+   LISTS/PYTHON ARRAY 
+
+-0 based index
+<variable> = [item1, item2, item3] 
+
+let(list) 
+list slicing      :     list[<first-index> : <last-index>]
+
+LIST METHODS : 
+   list.append(<n>) #adds an item at last 
+   lsit.sort()   #sorts in ascending order 
+   list.reverse()    
+   list.insert( <index> <element> ) #inserts element at given index.   
+   list.remove(<n>) #to remove first occurrence of <n> from list 
+   list.pop(<n>) #removes element at <n> 
+
+ ___________________________________________________________________________________________________________________________
+
+   TUPLES 
+
+a build-in dataType that let's us create immutable sequence of values. (list but smth we can't update)
+
+<var> = (<item1>, <item2>) 
+',' is necessary to create a tuple else python will recognize that as string
+
+TUPLE METHODS : 
+      <varibale>.index(<n>) #returns index of first occurrence
+      <variable>.count(<n>) #counts total occurrence of <n> 
+
+ ___________________________________________________________________________________________________________________________
+
+
+   DICTIONARY : 
+
+#dictionary is structures of python . 
+
+<var> = {
+   "key" : "value"/value , 
+   "another-key" : "another-value" ,
+}
+
+to assign a new key-value pair:
+         <var>["key"] = "value" 
+
+to access values from dictionary
+         <var>["key"] 
+
+Nested dictionary is possible
+
+DICTIONARY METHODS :
+      <dict>.keys() :   returns all values 
+      <dict>.values() :  returns all values  
+      <dict>.items() :  return all key-value pairs as tuples 
+      <dict>.get("key") : returns the key according to value 
+      <dict>.udpate(newDict) : inserts specified items in the dict. 
+   
+
+___________________________________________________________________________________________________________________________
+
+   SETS 
+
+   collection of un-ordered items. 
+<set-name> = {val1, val2, val3}
+   each item must be unique
+
+null_set = set() #empty set syntax
+
+SET METHODS : 
+   set.add(<element>)  #adds an element 
+   set.remove(<element>) #removes the element 
+   set.clear() #empties the set 
+   set.pop() #removes a random value 
+
+___________________________________________________________________________________________________________________________
+
+   LOOPS 
+
+WHILE LOOP : 
+   while <condition> : 
+      #some work 
+
+break; 
+continue; 
+
+FOR LOOP :
+   for <var> in <list> : 
+      #some work
+   
+   with else : 
+      for <var> in <list> : 
+         #some work 
+      else: 
+         #work to be done when loop ends
+
+range in for loop : 
+   range function returns a sequence of numbers starting from 0(default),
+   and increments by 1(default) and stop before specified number. 
+
+   : range(start?, stop, setp?) 
+
+   for <element> in range(5) 
+   for <element> in range(1,5) 
+   for <element> in range(1,5,2) 
+___________________________________________________________________________________________________________________________
+
+   FUNCTIONS : 
+
+def <function name>(<arguments>):
+   #function definition
+   return <value> 
+___________________________________________________________________________________________________________________________
