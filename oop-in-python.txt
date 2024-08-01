@@ -1,0 +1,74 @@
+                                        !!!!!!!!!!!!!! OBJECT ORIENTED PROGRAMMING IN PYTHON !!!!!!!!!!!!!! 
+,
+
+#creating class 
+
+               class <class name> 
+                     <key> = <"value">
+               
+#creating objects 
+
+               <object name> = <class name>() 
+                  #then we can access values 
+               
+#constructor / init function
+
+   _ _ init _ _ 
+
+               class <class> 
+                  def __init__(<arguments>): 
+                     #function definition 
+
+#class and instance attributes 
+
+         data that is unique for every instance of that class is defined by : 
+                  self.<var> = "value" 
+               
+#static methods 
+
+           methods that do not have a self parameter and works on class instead of objects  
+            @staticmethod #decorator 
+               def <method name> : 
+                     #method definition 
+
+'del' keyword 
+      used to delete class instances 
+
+#private data in python! 
+      __<var> = <value>       :     This data is private. 
+
+
+#INHERITANCE : 
+
+1) single inheritance : 
+      class car:    
+         #base class 
+
+      class toyota(car) :  
+         #derived class from car class. 
+   
+2) multi level inheritance : 
+
+         base class ---> derived class -----> derived class from previously derived class 
+
+3) multiple inheritance : 
+
+      class <class name> (<first base class>, <second base class> )      
+
+#SUPER METHOD :
+                  is used to access methods of parent class 
+
+
+#class method decorator 
+      @class method
+         def <method name>(<args>): 
+            #method definition 
+
+         
+#property decorator : 
+                        used on any method in class to use the method as property. 
+
+#getter decorator 
+#setter decorator 
+
+#operator and dunder(double underscore) function :
